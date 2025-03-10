@@ -2,6 +2,8 @@ const express = require ("express");
 const cors = require ("cors");
 const databaseRouter = require("./app/router/database.router");
 const ApiError = require ("./app/api-error");
+const Users = require("./app/router/users.route");
+
 
 
 const app = express ();
@@ -14,6 +16,7 @@ app.get("/", (req, res) => {
 
 
 app.use("/api/database", databaseRouter);
+app.use("/api/users", Users);
 
 
 
