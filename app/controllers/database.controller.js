@@ -3,7 +3,7 @@ const DatabaseService = require("../services/database.service");
 const MongoDB = require("../utils/mongodb.util");
 
 exports.create = async (req, res, next) => {
-    if (!req.body.hovaten) {
+    if (!req.body.hoten) {
         return next(new ApiError(400, "Name cannot be empty"));
     }
     try {
@@ -14,6 +14,8 @@ exports.create = async (req, res, next) => {
         return next(new ApiError(500, "An error occurred while creating the record"));
     }
 };
+
+
 
 exports.findAll = async (req, res, next) => {
     try {

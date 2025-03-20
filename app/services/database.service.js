@@ -9,10 +9,10 @@ class DatabaseService {
         const record = {
             Madonvi: payload.Madonvi,
             MaCN: payload.MaCN,
-            TenCN: payload.TenCN,
+            tenCN: payload.tenCN,
             ngaydk: payload.ngaydk,
-            makh: payload.makh,
-            hovaten: payload.hovaten,
+            MaKH: payload.MaKH,
+            hoten: payload.hoten,
             hotenenglish: payload.hotenenglish,
             tentattv: payload.tentattv,
             tenta: payload.tenta,
@@ -24,16 +24,16 @@ class DatabaseService {
             manoicapCMT: payload.manoicapCMT,
             noicap: payload.noicap,
             noisinh: payload.noisinh,
-            DCthuongtru: payload.DCthuongtru,
+            diachitt: payload.diachitt,
             province: payload.province,
             district: payload.district,
             commune: payload.commune,
-            DCnharieng: payload.DCnharieng,
+            dcnharieng: payload.dcnharieng,
             Noicongtac: payload.Noicongtac,
             dienthoai: payload.dienthoai,
-            didong: payload.didong,
+            dtdd: payload.dtdd,
             sofax: payload.sofax,
-            email: payload.email,
+            dcemail: payload.dcemail,
             nhanvienNN: payload.nhanvienNN,
             QuanlyNN: payload.QuanlyNN,
             TukinhdoanhNN: payload.TukinhdoanhNN,
@@ -63,6 +63,7 @@ class DatabaseService {
             ttthe: payload.ttthe,
             daidienA: payload.daidienA,
             chucvuA: payload.chucvuA,
+            kiemsoat: payload.kiemsoat,
             taikhoan: payload.taikhoan,
             tenGDvien: payload.tenGDvien,
             MaGDvien: payload.MaGDvien,
@@ -89,7 +90,16 @@ class DatabaseService {
             quoctich: payload.quoctich,
             Dantoc: payload.Dantoc,
             tongiao: payload.tongiao,
-            cutru: payload.cutru
+            cutru: payload.cutru,
+
+            //
+            ddk: payload.ddk, //ngay ky
+            mdk: payload.mdk, //thang ky
+            ydk: payload.ydk, //nam ky
+
+            //
+            dtnghenghiep: payload.dtnghenghiep,
+            diachiCN: payload.diachiCN,
         };
         
         // Remove undefined fields
