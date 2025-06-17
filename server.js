@@ -9,8 +9,9 @@ async function startServer() {
         console.log("Connect to database!");
 
         const PORT = config.app.port;
-        app.listen(PORT, "10.143.0.187", () => {
-            console.log(`Server is running at http://10.143.0.187:${PORT}`);
+        app.listen(PORT, "0.0.0.0", () => {
+        // app.listen(PORT, () => {
+            console.log(`Server is running at http://10.143.0.189:${PORT}`);
         });
     } catch (error) {
         console.log("Cannot connect to database!", error);
